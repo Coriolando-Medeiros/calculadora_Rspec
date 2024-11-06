@@ -9,8 +9,14 @@ module Calculadora
     def soma(a, b)
       a + b
     end
+
     def subtracao(a, b)
       a - b
+    end
+
+
+    def divide(a, b)
+      a / b
     end
   end
 end
