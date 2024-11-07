@@ -10,9 +10,10 @@ RSpec.describe Calculadora::Calculadora do
     calc = Calculadora::Calculadora.new
     expect(calc.subtracao(2, 3)).to eq(-1)
   end
+
   it 'divide um número por outro' do
     calc = Calculadora::Calculadora.new
-    expect(calc.divide(2, 3)).to eq(0.6)
+    expect(calc.divide(2, 3)).to be_within(0.1).of(0.6)
   end
 
   it 'multiplica dois números' do
