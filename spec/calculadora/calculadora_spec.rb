@@ -14,4 +14,9 @@ RSpec.describe Calculadora::Calculadora do
     calc = Calculadora::Calculadora.new
     expect(calc.divide(2, 3)).to eq(0.6)
   end
+
+  it 'multiplica dois números' do
+    calc = Calculadora::Calculadora.new
+    expect(calc.multiplica(2, 3)).to eq(6)
+  end
 end
