@@ -14,9 +14,12 @@ module Calculadora
       a - b
     end
 
-
     def divide(a, b)
-      a / b
+      a.to_f / b
+    end
+
+    def multiplica(a, b)
+      a * b
     end
   end
 end
